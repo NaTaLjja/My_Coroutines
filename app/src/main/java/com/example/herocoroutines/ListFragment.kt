@@ -10,8 +10,10 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import dagger.hilt.android.AndroidEntryPoint
 import java.util.Collections
 
+@AndroidEntryPoint
 class ListFragment:Fragment() {
     private var onItemClick: (Hero) -> Unit ={}
     private lateinit var viewModel:MyViewModel

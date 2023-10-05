@@ -3,8 +3,10 @@ package com.example.herocoroutines
 import android.os.Bundle
 import android.os.Parcelable
 import androidx.appcompat.app.AppCompatActivity
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.parcelize.Parcelize
 
+@AndroidEntryPoint
 class MainActivity:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
